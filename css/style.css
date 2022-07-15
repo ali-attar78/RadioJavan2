@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+html {
+    height:100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navSecond {
+    max-width: 100%;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.navSecond ul {
+
+    text-align: right;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0.2) 90%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.navSecond ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navSecond ul li a {
+    padding: 15px;
+    margin-right: 45px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(255, 255,255, 0.8);
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.navSecond ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.objectAnimation{
+    transition: .2s ease-in-out;
+}
+
+.objectAnimation:hover{
+    transform: scale(1.05);
+
+}
+
+a{
+    text-decoration: none;
+}
+a h6{
+margin-left: 5px;
+}
+
+.subname{
+    font-size: 15px;
+}
+
+
+.musicList{
+    border-right: none;
+    border-width: 1px;
+    border-radius: 0px!important;
+    border-color: white!important;
+    background-color: #212529!important;
+}
+.musicListName{
+
+    text-align: left;
+    margin-left: 15px;
+    transition: .2s ease-in-out;
+}
+
+
+.musicList:hover{
+    transform: scale(1.005);
+}
+
+.nav-item a{
+    text-align: right;
+    justify-content: right;
+    align-self: start;
+
+}
+/*  login admin  */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+body{
+
+    font-family: 'Noto Sans', sans-serif;
+}
+.text-center{
+    color:#fff;
+    text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius:3px;
+    padding:70px 100px;
+}
+.input-container{
+    position:relative;
+    margin-bottom:25px;
+}
+.input-container label{
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color:#fff;
+    pointer-event:none;
+    transition: all 0.5s ease-in-out;
+}
+.input-container input{
+    border:0;
+    border-bottom:1px solid #555;
+    background:transparent;
+    width:100%;
+    padding:8px 0 3px 0;
+    font-size:16px;
+    color:#fff;
+}
+.input-container input:focus{
+    border:none;
+    outline:none;
+    border-bottom:2px solid #ffffff;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    top:-12px;
+    font-size:12px;
+
+}
+
+.card_login{
+    border-radius: 1rem;
+    background-color: #1C1B22;
+    border-color: white;
+    box-shadow: 15px 15px 0px 0px  #3C3F4108;}
+
+.check_admin{
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.login_admin{
+    position: relative;
+    right: 108px;
+    top: -54px;
+}
+
+
+/*                         dashboard design                               */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+    width: var(--offcanvas-width);
+}
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+.sidebar-link .right-icon {
+    display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+    /* this is to remove the backdrop */
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+    .sidebar-nav {
+        -webkit-transform: none;
+        transform: none;
+        visibility: visible !important;
+        height: calc(100% - var(--topNavbarHeight));
+        top: var(--topNavbarHeight);
+    }
+}
+
+
+/*                         add form design                               */
+.card_update{
+
+    margin-left: auto;
+margin-right: auto;
+    display: block;
+    position: relative;
+    left: 100px;
+
+}
+
+.add_button{
+    width: 50%;
+    color: white;
+}
+
+.overflow{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
